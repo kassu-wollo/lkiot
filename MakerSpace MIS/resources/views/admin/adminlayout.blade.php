@@ -54,7 +54,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="{{url('cust.dashboard')}}">
+                            <a class="nav-link" href="{{url('admin.dashboard')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
@@ -66,9 +66,9 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('static')}}">Overview</a>
-                                    <a class="nav-link" href="{{route('kas')}}">Project TimeLine</a>
-                                    <a class="nav-link" href="{{route('kas')}}">Project kenban</a>
+                                    <a class="nav-link" href="{{route('mview')}}">Overview</a>
+                                    <a class="nav-link" href="#">Project TimeLine</a>
+                                    <a class="nav-link" href="#">Project kenban</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTasks" aria-expanded="false" aria-controls="collapseTasks">
@@ -78,9 +78,9 @@
                             </a>
                             <div class="collapse" id="collapseTasks" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('static')}}">Overview</a>
-                                    <a class="nav-link" href="{{route('kas')}}">Task TimeLine</a>
-                                    <a class="nav-link" href="{{route('kas')}}">Task kenban</a>
+                                    <a class="nav-link" href="#">Overview</a>
+                                    <a class="nav-link" href="#">Task TimeLine</a>
+                                    <a class="nav-link" href="#">Task kenban</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTeam" aria-expanded="false" aria-controls="collapseTasks">
@@ -90,7 +90,7 @@
                             </a>
                             <div class="collapse" id="collapseTeam" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('static')}}">Overview</a>
+                                    <a class="nav-link" href="#">Overview</a>
                                     </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseBudgets" aria-expanded="false" aria-controls="collapseTasks">
@@ -100,8 +100,8 @@
                             </a>
                             <div class="collapse" id="collapseBudgets" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('static')}}">Overview</a>
-                                    <a class="nav-link" href="{{route('static')}}">Budgets Dashboard</a>
+                                    <a class="nav-link" href="#">Overview</a>
+                                    <a class="nav-link" href="#">Budgets Dashboard</a>
                                     </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseProgress" aria-expanded="false" aria-controls="collapseTasks">
@@ -111,8 +111,8 @@
                             </a>
                             <div class="collapse" id="collapseProgress" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('report')}}">Overview</a>
-                                    <a class="nav-link" href="{{route('static')}}"> Progress Reports Calendar</a>
+                                    <a class="nav-link" href="{{route('preportshow')}}">Overview</a>
+                                    <a class="nav-link" href="#"> Progress Reports Calendar</a>
                                     </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -147,11 +147,11 @@
                                 </nav>
                             </div>
                             <div class="sb-sidenav-menu-heading">Addons</div>
-                            <a class="nav-link" href="{{url('cust.chart')}}">
+                            <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Charts
                             </a>
-                            <a class="nav-link" href="{{url('cust.table')}}">
+                            <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Tables
                             </a>

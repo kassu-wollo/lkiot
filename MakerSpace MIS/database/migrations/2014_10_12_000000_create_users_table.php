@@ -25,6 +25,24 @@ return new class extends Migration
             $table->string('email')->unique()->nullable();
             $table->string('message')->nullable();
         });
+        schema::create('report',function(Blueprint $table){
+            $table->string('acomp');
+            $table->date('rdate');
+            $table->string('challenge');
+            $table->string('oppo');
+            $table->string('nstep');
+            $table->date('edate');
+
+
+
+        });
+        schema::create("makerspace",function(blueprint $table){
+            $table->string('name');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('status');
+            $table->string('descrbition');
+        });
     }
 
     /**

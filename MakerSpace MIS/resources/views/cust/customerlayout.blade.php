@@ -78,7 +78,7 @@
                             </a>
                             <div class="collapse" id="collapseTasks" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('static')}}">Overview</a>
+                                    <a class="nav-link" href="#">Overview</a>
                                     <a class="nav-link" href="{{route('kas')}}">Task TimeLine</a>
                                     <a class="nav-link" href="{{route('kas')}}">Task kenban</a>
                                 </nav>
@@ -111,7 +111,7 @@
                             </a>
                             <div class="collapse" id="collapseProgress" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="{{route('static')}}">Overview</a>
+                                    <a class="nav-link" href="{{url('tshow')}}">Overview</a>
                                     <a class="nav-link" href="{{route('static')}}"> Progress Reports Calendar</a>
                                     </nav>
                             </div>

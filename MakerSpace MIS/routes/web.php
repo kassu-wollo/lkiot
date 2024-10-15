@@ -22,7 +22,14 @@ route::get('/admin.dashboard',[KasMan::class,'admin'])->name('dashboard');
 route::post('/',[KasMan::class,'contact'])->name('contactpost');
 route::post('/',[KasMan::class,'flogin'])->name('login.post');
 Route::get('/cust.kas', [kasMan::class,'index'])->name('kas');
+//makerspace 
 route::get('/admin.report',[KasMan::class,'report'])->name('report');
+route::post('/reg',[KasMan::class,'registerreport'])->name('reg');
+Route::get('/admin.preportshow', [kasMan::class,'pindex'])->name('preportshow');
+
+route::get('/admin.mregister',[KasMan::class,'mregister'])->name('mregister');
+route::post('/mreg',[KasMan::class,'makerspace'])->name('mreg');
+Route::get('/admin.mview', [kasMan::class,'mindex'])->name('mview');
 
 
 Route::middleware('auth')->group(function () {

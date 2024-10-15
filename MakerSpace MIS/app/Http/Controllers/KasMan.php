@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use App\Models\KasWollo;
+use App\Models\Makerspace;
+
+use App\Models\Report;
 use App\Models\user;
 use Illuminate\Support\Facades\DB;
 class KasMan extends Controller
@@ -13,7 +16,9 @@ class KasMan extends Controller
     function  static(){return view('cust.static');}
     function  table(){return view('cust.table');}
     function  chart(){return view('cust.chart');}
+    function  admin(){return view('admin.dashboard');}
     function  report(){return view('admin.report');}
+    function  mregister(){return view('admin.mregister');}
     public function contact(request $req){
         $user =new KasWollo;
         $user->name=$req->input('name');
@@ -21,6 +26,22 @@ class KasMan extends Controller
         $user->message=$req->input('message');
         $user->save();
     return view('home');
+    }
+    public function registerreport(request $req){
+        $user =new Report;
+        $user->acomp=$req->input('acomp');
+        $user->rdate=$req->input('rdate');
+        $user->challenge=$req->input('challenge');
+        $user->oppo=$req->input('oppo');
+        $user->nstep=$req->input('nstep');
+        $user->edate=$req->input('edate');
+        $user->save();
+    return view('admin.report');
+    }
+    public function pindex(): View
+    {
+      $student = Report::all();
+      return view('admin.report', compact('student'));
     }
     public function flogin(Request $request)
     {
@@ -43,4 +64,25 @@ class KasMan extends Controller
       $student = user::all();
       return view('cust.kas', compact('student'));
     }
+
+
+//maker Space 
+public function makerspace(request $req){
+    $user =new Makerspace;
+    $user->name=$req->input('name');
+    $user->email=$req->input('email');
+    $user->phone=$req->input('phone');
+    $user->status=$req->input('status');
+    $user->descrbition=$req->input('descrbition');
+    $user->save();
+return view('admin.mregister');
+}
+    public function mindex(): View
+    {
+        $maker = makerspace::all();
+      return view('admin.mview', compact('maker'));
+    }
+
+
+
 }
