@@ -43,6 +43,16 @@ return new class extends Migration
             $table->string('status');
             $table->string('descrbition');
         });
+        Schema::create('team', function (Blueprint $table) {
+            $table->id();
+            $table->string('fname');
+            $table->string('role');
+            $table->string('location');
+            $table->string('phone');
+            $table->string('email');
+            $table->string('task');
+            $table->string('project');
+        });
     }
 
     /**
