@@ -3,11 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <meta name="description" content="">
         <meta name="author" content="">
-
-        <title>Wollo University Kombolcha </title>
+        <style>
+        p {
+    font-family: Arial, sans-serif; /* Sets the font family */
+    font-size: 16px; /* Sets the font size */
+    color: #333; /* Sets the text color */
+    line-height: 1.5; /* Sets the line height for better readability */
+    margin: 20px 0; /* Adds vertical spacing around the paragraph */
+    text-align: justify; /* Justifies the text */}
+</style>
+        <title> MakerSpace</title>
         <!-- CSS FILES -->                
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,11 +28,11 @@
         <main>
             <nav class="navbar navbar-expand-lg">                
                 <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="Tiya Golf Club">
+              
+                        <img src="images/kas.png" width="50px" height="50px" alt="Tiya Golf Club">
                         <span class="navbar-brand-text">
-                            Dessie
-                            <small>City Admin</small>
+                           Maker 
+                            <small>Space</small>
                         </span>
                     </a>
                     <div class="d-lg-none ms-auto me-3">
@@ -119,21 +126,20 @@
             </div>    
                     
             <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
-
                 <div class="section-overlay"></div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                            <h2 class="text-white">Welcome to Dessie City Administration</h2>
+                            <h2 class="text-white">Welcome to Maker Space Management Information Systems (MIS) </h2>
                             <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
-                                <span>Make Our City</span>
+                                <span>Make Our World</span>
                                 <span class="cd-words-wrapper">
                                     <b class="is-visible">Modern</b>
-                                    <b>Love</b>
-                                    <b>Creativity</b>
+                                    <b>Digitialized</b>
+                                    <b>Creative</b>
                                     <b>Attractive</b>
-                                    <b>Peace and stabel</b>
+                                
                                 </span>
                             </h1>
 
@@ -143,11 +149,14 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-12">
-                            <div class="ratio ratio-16x9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MGNgbNGOzh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
+                            <div>
+<p>Management Information Systems (MIS) is the study of people, technology, organizations, and the relationships among them.
+It refer to systems designed to manage an organization's data and processes efficiently. They involve people, technology, and procedures 
+to support decision-making, coordination, control, and analysis within a company. MIS refer to an integrated, user-machine system that 
+provides managers and employees with the information necessary to make informed business decisions by combines technology, people, 
+and business processes to collect, process, store, and distribute information relevant to managing an organization efficiently. Therefore, 
+the primary objective of MIS is to improve decision-making, streamline operations, and enhance organizational performance   </p>                        </div>
                         </div>
-
                     </div>
                 </div>
 
